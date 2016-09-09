@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.mysampleapp.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:background="@color/dark_content_text"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:scaleType="fitXY"
+            android:layout_width="192dp"
+            android:layout_height="192dp"
+            android:text="New Button"
+            android:id="@+id/old_button_1"
+            android:layout_gravity="right|bottom"
+            android:layout_alignParentBottom="true"
+            android:enabled="true" />
+
+        <ImageButton
+            android:scaleType="fitXY"
+            android:layout_width="192dp"
+            android:layout_height="192dp"
+            android:text="New Button"
+            android:id="@+id/old_button_2"
+            android:layout_gravity="left|bottom"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:enabled="true" />
+
+        <TextView
+            android:textSize="45sp"
+            android:id="@+id/votes_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/old_button_1"
+            android:layout_alignTop="@id/old_button_1"
+            android:layout_alignRight="@id/old_button_1"
+            android:layout_alignBottom="@id/old_button_1"
+            android:layout_margin="1dp"
+            android:gravity="center"
+            android:textColor="#000000" />
+
+        <TextView
+            android:textSize="45sp"
+            android:id="@+id/votes_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/old_button_2"
+            android:layout_alignTop="@id/old_button_2"
+            android:layout_alignRight="@id/old_button_2"
+            android:layout_alignBottom="@id/old_button_2"
+            android:layout_margin="1dp"
+            android:gravity="center"
+            android:textColor="#000000" />
+
+        <ImageButton
+            android:scaleType="fitXY"
+            android:layout_width="192dp"
+            android:layout_height="192dp"
+            android:text="New Button"
+            android:id="@+id/new_button_1"
+            android:clickable="true"
+            android:enabled="true"
+            android:layout_gravity="right|top"
+            android:layout_toLeftOf="@+id/new_button_2"
+            android:layout_toStartOf="@+id/new_button_2"
+            android:layout_above="@+id/old_button_1" />
+
+        <ImageButton
+            android:scaleType="fitXY"
+            android:layout_width="192dp"
+            android:layout_height="192dp"
+            android:text="New Button"
+            android:id="@+id/new_button_2"
+            android:clickable="true"
+            android:enabled="true"
+            android:layout_gravity="left|top"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@+id/old_button_1" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/textView2"
+            android:layout_above="@+id/new_button_1"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

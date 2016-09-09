@@ -1,0 +1,55 @@
+-injars 'C:\Users\Mushroomhermit\AndroidStudioProjects\MySampleApp\app\build\intermediates\transforms\jarMerging\debug\jars\1\1f\combined.jar'
+-outjars 'C:\Users\Mushroomhermit\AndroidStudioProjects\MySampleApp\app\build\intermediates\multi-dex\debug\componentClasses.jar'
+
+-libraryjars 'Z:\Programs\Mushroomhermit\AppData\Local\Android\sdk\build-tools\23.0.1\lib\shrinkedAndroid.jar'
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontusemixedcaseclassnames
+-dontpreverify
+-dontwarn
+-printconfiguration 'C:\Users\Mushroomhermit\AndroidStudioProjects\MySampleApp\app\build\intermediates\multi-dex\debug\components.flags'
+
+
+-keep class com.mysampleapp.Application {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep class com.mysampleapp.SplashActivity {
+    <init>();
+}
+
+-keep class com.mysampleapp.MainActivity {
+    <init>();
+}
+
+-keep class com.amazonaws.mobileconnectors.s3.transferutility.TransferService {
+    <init>();
+}
+
+-keep class com.amazonaws.mobile.downloader.service.DownloadService {
+    <init>();
+}
+
+-keep class com.amazonaws.mobile.downloader.service.NetworkStateListener {
+    <init>();
+}
+
+-keep class com.amazonaws.mobile.downloader.query.DownloadQueueProvider {
+    <init>();
+}
+
+-keep class android.support.v4.content.FileProvider {
+    <init>();
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}
